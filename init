@@ -1,0 +1,13 @@
+#!/bin/bash
+mkdir temp
+cp ./Template/CDF_template.cpp temp/
+cp ./Template/help_functions.cpp temp/
+cp ./Template/test.sh temp/
+cp ./Template/end temp/
+cp ./Template/create_test.py temp/
+cd temp
+for VARIABLE in {1..8}
+do
+    cp CDF_template.cpp Q$VARIABLE.cpp
+    touch test$VARIABLE
+done
