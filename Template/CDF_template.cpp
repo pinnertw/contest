@@ -1,9 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
+#define triche ios::sync_with_stdio(false);cin.tie(0);cout.tie(0)
 int main(){
-    ios::sync_with_stdio(false);
-    cin.tie(0);
-    cout.tie(0);
+    triche;
     int t;
     cin >> t;
     while (t--){

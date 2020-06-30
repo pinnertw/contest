@@ -1,9 +1,10 @@
 #!/bin/bash
-rm a.out out1 out2 out3
+rm --verbose a.out out1 out2 out3
 for i in {1..8}
 do
-    cp CDF_template.cpp Q$i.cpp
-    cp test.py Q$i.py
-    cp test test$i
+    rm --verbose Q$i.cpp Q$i.py test$i
+    touch Q$i.cpp
+    touch Q$i.py
+    touch test$i
 done
 
